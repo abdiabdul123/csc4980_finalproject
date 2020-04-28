@@ -1,5 +1,6 @@
 # csc4980_finalproject
 Group project for CSC 4980
+
 Link to presentation video: https://www.youtube.com/watch?v=Y6xUJz_pcw4&feature=youtu.be
 
 To use this software, you will need to make sure you have Solidity and Truffle installed on your machine. Assuming you are using a Linux-based system, the following commands will download each, using the npm package manager:
