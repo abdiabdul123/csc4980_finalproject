@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Real Estate</title>
+    <style>
+        body {
+            background-color: purple;
+        }
+        #toolBar {
+            text-align: right;
+            height: 50px;
+            width: 100%;
+        }
+        #menu {
+            padding-left: 10px;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #main {
+            padding-top: 10%;
+
+        }
+        h2 {
+            color: red;
+        }
+        h3{
+            color: red;
+        }
+        #btn {
+            background-color: black;
+            border: none;
+            color: red;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        #status {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="status"></div>
+    <div id="frame">
+        <div id="toolBar">
+            <button id="menu" onclick=window.open("index.html","_self") title="Home Page">Home</button>
+            <button id="menu" onclick=window.open("aboutUs.html","_self") title="Information about Project">About Us</button>
+            <button id="menu" onclick=window.open("teamInfo.html","_self") title="Developing Team">Team Info</button>
+        </div>
+        <div id="main">
+              <center>
+              <img src='headerpic.png' height="175px" width="400px">
+              <h2>Listing House Rentals, House Leasings, and House Sales </h2>
+              <h3>Reservations Unavailable For Now </h2>
+
+              <input type="button" id="btn" value="Make a Listing" onclick=window.open("createListing.html","_self")>
+              </center>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

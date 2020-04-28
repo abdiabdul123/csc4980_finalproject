@@ -1,0 +1,62 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: purple;
+        }
+        #toolBar {
+            text-align: right;
+            height: 50px;
+
+            width: 100%;
+        }
+        #menu {
+            padding-left: 10px;
+            text-decoration: none;
+            background-color: purple;
+            color: black;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #frame {
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="middleLayer.js"></script>
+    <div id="frame">
+        <div id="toolBar">
+            <button id="menu" onclick=window.open("index.html","_self")>Home</button>
+            <button id="menu" onclick=window.open("aboutUs.html","_self")>About Us</button>
+            <button id="menu" onclick=window.open("teamInfo.html","_self")>Team Info</button>
+        </div>
+        <div id="top">
+          <h1>Reservation Details</h1>
+      </div>
+      <div id="event">
+         <form onsubmit="App.createTickets();" id="reservationInfo">
+              Name of Event Creator: <input type="text" id="eventOwn"/>
+             <br/>
+             <br/>
+              Telephone Number:<input type ="number" id="limitOfAttendees" />
+             <br/>
+             <br/>
+             Limit of Attendees: <input type ="number" id="phoneNumber" />
+             <br/>
+             <br/>
+              <button type="submit" formaction="index.html" value="submit">Submit</button>
+          </form>
+        </div>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/app.js"></script>
+</body>
+</html>

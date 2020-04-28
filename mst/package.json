@@ -1,0 +1,24 @@
+{
+  "name": "newEstate",
+  "version": "1.0.0",
+  "description": "<h1> New Estate </h1>",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "gulp-open": "^3.0.1"
+  }
+}

@@ -1,0 +1,74 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: purple;
+        }
+        #toolBar {
+            text-align: right;
+            height: 50px;
+
+            width: 100%;
+        }
+        #menu {
+            padding-left: 10px;
+            text-decoration: none;
+            background-color: purple;
+            color: black;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #top {
+            color: black;
+            font-size: 50px;
+            text-align: center;
+        }
+        #info {
+            text-align: center;
+            width: 100%;
+        }
+        #info2 {
+            text-align: center;
+            width: 500px;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="float">
+        <div id="toolBar">
+            <button id="menu" onclick=window.open("index.html","_self")>Home</button>
+            <button id="menu" onclick=window.open("aboutUs.html","_self")>About Us</button>
+            <button id="menu" onclick=window.open("teamInfo.html","_self")>Team Info</button>
+        </div>
+
+        <div id="top">About<br><br></div>
+
+        <div id="info">
+            <center>
+            <div id="info2">
+            <h3>
+                This project shows that blockchain is useful for more than cryptocurrencies, that it can be used by everyday people in their everyday lives, increasing security and transparency in the process. <br>
+                
+                Newestate allows the user to make a listing or browse listings by specific criteria.
+                Make open house reservations by specifying listing type, home type, and move-in urgency.
+                And create listings by specifying address, availability date, open house time, and house and leasing types.
+
+
+                </h3>
+            </div>
+            </center>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>    
+</body>
+</html>

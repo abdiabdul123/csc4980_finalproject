@@ -1,0 +1,86 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: purple;
+        }
+        #toolBar {
+            text-align: right;
+            height: 50px;
+
+            width: 100%;
+        }
+        #menu {
+            padding-left: 10px;
+            text-decoration: none;
+            background-color: purple;
+            color: black;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #frame {
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="middleLayer.js"></script>
+    <div id="frame">
+        <div id="toolBar">
+            <button id="menu" onclick=window.open("index.html","_self")>Home</button>
+            <button id="menu" onclick=window.open("aboutUs.html","_self")>About</button>
+            <button id="menu" onclick=window.open("teamInfo.html","_self")>Team Info</button>
+        </div>
+        <div id="top">
+          <h1>Create a Listing</h1>
+      </div>
+      <div id="event">
+         <form onsubmit="App.addEvent();" id="eventInfo" action="reserv.html"  >
+            Event Address: <input type="text" id="listingAddress"/>
+             <br/>
+             <br/>
+            
+            Start of Availability(MMDDYYYY):<input type ="number" id="availabilityDate" />
+             <br/>
+             <br/>
+            
+            Start Time of Open House (HHMM): <input type ="number" id="startTime" />
+             <br/>
+             <br/>
+
+             House Type: <select name = "House type" fomr="openHousetime">
+                        <option value ='1'> Apartment</option>
+                        <option value ='2'> Townhouse</option>
+                        <option value ='3'> House</option>
+                        <option value ='4'> Penthouse</option>
+                        <option value ='5'> Mansion</option>
+                    </select>
+                    <br/>
+                    <br/>
+
+              Leasing Type: <select name = "Leasing type" fomr="infomation">
+                        <option value ='1'> Lease</option>
+                        <option value ='2'> Sale</option>
+                        <option value ='3'> Rent</option>
+                    </select>
+                    <br/>
+                    <br/>
+
+             <input type="submit" value = "Next">
+
+          </form>
+        </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/app.js"></script>
+</body>
+</html>
