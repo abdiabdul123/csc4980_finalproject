@@ -1,5 +1,6 @@
 # csc4980_finalproject
-Group project for CSC 4980
+Group project for CSC 4980    
+Group members: Aaron Morrison and Abdullahi
 
 Link to presentation video: https://www.youtube.com/watch?v=Y6xUJz_pcw4&feature=youtu.be
 
